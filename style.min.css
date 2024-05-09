@@ -61,3 +61,19 @@ header {
     /* border-bottom: 2px black solid; */
     padding-bottom: 50px;
 }
+
+.login_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.log-f {
+    display: flex;
+    flex-direction: column;
+}
+
+.log-f > input {
+    margin-bottom: 10px;
+}
