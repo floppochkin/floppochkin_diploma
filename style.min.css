@@ -77,3 +77,16 @@ header {
 .log-f > input {
     margin-bottom: 10px;
 }
+
+.add_pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.add_pic_form {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+}
