@@ -38,9 +38,6 @@
                     }
                 }
             ?>
-           <!--  <a href="assets/img/1.jpg">
-                <img src="assets/img/1.jpg" alt="">
-            </a> -->
         </div>
     </div>
 </body>
