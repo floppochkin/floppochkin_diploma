@@ -44,6 +44,7 @@ if(!isset($_SESSION["admin"])){
                             printf("<form action='vendor/delete_image.php' method='POST'>");
                             printf("<img src='" . $row['image_path'] . "' alt=''>");
                             printf("<input type='hidden' name='id' value='" . $row['id'] . "'>");
+                            printf("<input type='hidden' name='image_path' value='" . $row['image_path'] . "'>");
                             printf("<center><input style='margin-top: 15px;'  name='delete_item' type='submit' value='Удалить'></center>");
                             printf("</form>");
                             $query_num_rows = ($query_num_rows - 1);
