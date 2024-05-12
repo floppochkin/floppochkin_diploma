@@ -53,6 +53,25 @@ if(!isset($_SESSION["admin"])){
                 ?>
             </div>
        </div>
+       <div class="change_comm_status">
+            <div class="comm_status">
+                <div class="status_of">Статус заказов:</div>
+                <?php 
+                    require_once "vendor/connect.php";
+                    $query = mysqli_query($connect, "SELECT * FROM `commission_status`");
+                    $query_num_rows = mysqli_num_rows($query);
+                    if ($query_num_rows > 0) {
+                        while ($row = mysqli_fetch_assoc($query)) {
+                            printf("<div class='orders'>" . $row['comm_status'] . "</div>");
+                            $query_num_rows = ($query_num_rows - 1);
+                        }
+                        printf("<form action='vendor/change_comm_status.php' method='POST'>");
+                        printf("<input style='margin-top: 15px;'  name='change_status' type='submit' value='Изменить статус'>");
+                        printf("</form>");
+                    }
+                ?>
+            </div>
+       </div>
     </div>
 </body>
 </html>

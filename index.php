@@ -12,7 +12,7 @@
             <div class="header_nav">
                 <div class="site_name">Имя Сайта</div>
                 <div><a href="gallery.php">Галерея</a></div>
-                <div><a href="#">Заказать услуги</a></div>
+                <div><a href="commission.php">Заказать услуги</a></div>
             </div>
         </header>
         <div class="about_us">

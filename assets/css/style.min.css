@@ -98,3 +98,29 @@ header {
     flex-direction: column;
     width: 230px;
 }
+
+.comm_status {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.status_of {
+    padding-right: 5px;
+}
+
+.change_comm_status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.comm_status form {
+    margin-left: 15px;
+}
+
+.comm_status form input {
+    margin-bottom: 10px;
+}
