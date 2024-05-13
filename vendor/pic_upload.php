@@ -3,6 +3,10 @@ session_start();
 require_once "connect.php";
 define('MB', 1048576);
 
+if(!isset($_SESSION["admin"])) {
+    exit();
+}
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if(empty($_FILES["image"]["name"])) { // Валидация в случае того, если пользователь забыл загрузить картинку и нажал на "загрузить"
