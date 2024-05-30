@@ -5,19 +5,51 @@
 
 .element-1 a {
     width: 25%;
-    height: fit-content;
     box-sizing: border-box;
     padding: .25rem;
+    display: flex;
+    align-items: center;
+    border: 3px black solid;
 }
 
 .element-1 form {
     width: 25%;
     height: fit-content;
-    box-sizing: border-box;
     padding: .25rem;
 }
 
 .element-1 img {
+    width: 100%;
+    display: flex;
+}
+
+.element-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.element-2 input {
+}
+
+.element-2 a {
+    width: 25%;
+    box-sizing: border-box;
+    padding: .25rem;
+    display: flex;
+    align-items: center;
+}
+
+.element-2 form {
+    width: 25%;
+    min-height: 442px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .25rem;
+}
+
+.element-2 img {
     width: 100%;
     display: flex;
 }

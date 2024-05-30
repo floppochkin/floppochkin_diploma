@@ -104,6 +104,7 @@ header {
     align-items: center;
     font-weight: bold;
     font-size: 16pt;
+    padding-bottom: 40px;
 }
 
 .status_of {
@@ -115,6 +116,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .comm_status form {
@@ -127,4 +129,14 @@ header {
 
 #B1E3_c {
     text-align: center;
+}
+
+.pricelist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricelist form {
+    display: flex;
 }

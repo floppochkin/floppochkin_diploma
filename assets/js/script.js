@@ -5,3 +5,12 @@ jQuery(document).ready(($)=>{
     });
 
 });
+
+jQuery(document).ready(($)=>{
+
+    $('.element-2').lightGallery({
+
+    });
+
+});
+

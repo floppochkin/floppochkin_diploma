@@ -36,10 +36,33 @@
             <div id="B1E2">
                 <h2>Ценовой лист</h2><br>
                 <div id="B1E3_c">
-                    Портрет: 2000 рублей<br>
-                    По пояс: 2500 рублей<br>
-                    В полный рост: 4000 рублей<br>
-                    Фон: 500-1000 рублей в зависимости от сложности<br>
+                    <?php 
+                        require_once "vendor/connect.php";
+                        $query = mysqli_query($connect, "SELECT * FROM `pricelist` WHERE `id` = 1");
+                        $query_num_rows = mysqli_num_rows($query);
+                        if ($query_num_rows > 0) {
+                            while ($row = mysqli_fetch_assoc($query)) {
+                                printf("<div style='padding: 10px;' class='prices'>Портрет: " . $row['price'] . " руб</div>");
+                                $query_num_rows = ($query_num_rows - 1);
+                            }
+                        }
+                        $query = mysqli_query($connect, "SELECT * FROM `pricelist` WHERE `id` = 2");
+                        $query_num_rows = mysqli_num_rows($query);
+                        if ($query_num_rows > 0) {
+                            while ($row = mysqli_fetch_assoc($query)) {
+                                printf("<div style='padding: 10px;' class='prices'>Картина в полный рост: " . $row['price'] . " руб</div>");
+                                $query_num_rows = ($query_num_rows - 1);
+                            }
+                        }
+                        $query = mysqli_query($connect, "SELECT * FROM `pricelist` WHERE `id` = 3");
+                        $query_num_rows = mysqli_num_rows($query);
+                        if ($query_num_rows > 0) {
+                            while ($row = mysqli_fetch_assoc($query)) {
+                                printf("<div style='padding: 10px;' class='prices'>Пейзаж: " . $row['price'] . " руб</div>");
+                                $query_num_rows = ($query_num_rows - 1);
+                            }
+                        }
+                    ?>
                 </div>
             </div>
         </div>
