@@ -14,12 +14,12 @@ if(isset($_SESSION["admin"])){
 </head>
 <body>
     <div class="site">
-        <header><center><h1>Админская панель</h1></center></header>
+        <header class="adm_log_h"><h1>Админская панель</h1></header>
         <div class="login_form">
             <form action="vendor/auth.php" method="POST" class="log-f">
                 <input name="login" type="text" placeholder="Логин" required></input>
                 <input name="pass" type="password" placeholder="Пароль" required></input>
-                <input type="submit" value="Войти"></input>
+                <button type="submit" value="Войти">Войти</button>
             </form>
             <?php
                 if(isset($_SESSION['message'])){

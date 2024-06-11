@@ -2,52 +2,152 @@
     margin: 0;
 }
 
+@font-face {
+	font-family: 'Futura-Medium'; 
+	src: url(../fonts/FuturaPTMedium.otf); 
+}
+
+@font-face {
+	font-family: 'Futura-Light'; 
+	src: url(../fonts/FuturaPTLight.otf); 
+}
+
+@font-face {
+	font-family: 'Futura-Bold'; 
+	src: url(../fonts/FuturaPTBold.otf); 
+}
+
+body {
+    background-color: #bdb09a;
+    font-family: 'Futura-Light';
+}
+
 header {
-    height: 60px;
-    border-bottom: 2px black solid;
+    height: 100px;
+    background-color: #954337;
+    
 }
 
 .header_nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-right: 3%;
+    font-size: 17pt;
 }
 
 .header_nav > div {
     margin-top: 20px;
 }
 
+body a:link {
+   color: white;
+   text-decoration: none;
+}
+
+body a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: rgb(233, 87, 87);
+    text-decoration: underline;
+    transition: color 0.4s ease-in-out;
+}
+
 .site_name {
-    font-weight: bold;
-    font-size: 16pt;
+    font-weight: bolder;
+    font-size: 35pt;
+    font-family: 'Futura-Light';
+    display: flex;
+    align-items: end;
+    color: rgb(0, 0, 0);
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 3px 3px 3px black;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .about_us {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 2px black solid;
+    text-shadow: 3px 3px 3px black;
     padding-top: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 30px;
+    padding-bottom: 140px;
+    /* margin-bottom: 30px; */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.363) 0%, rgba(0, 0, 0, 0.185) 100%),
+        linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.295) 50%, rgba(0, 0, 0, 0) 100%),
+        url("../img/tony.jpg");
+    background-size: cover;
+    background-position: initial;
+}
+
+#B1E1 {
+    margin-top: 30px;
+    font-family: 'Futura-Bold';
+    color: white;
 }
 
 #B1E2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 15pt;
+    color: white;
+}
+
+#B1E2 h2 {
+    font-family: 'Futura-Medium';
 }
 
 #B1E3 {
     width: 40%;
+    color: white;
+}
+
+.faq_n_socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 6px #a19783 solid;
+    background-color: #a19783;
+    border-radius: 10px 300px;
+    font-size: 14pt;
 }
 
 .socials {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 2px black solid;
-    padding-bottom: 50px;
-    margin-bottom: 30px;
+    margin-right: 50px;
+}
+
+
+.prices_n_payment {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 6px #a19783 solid;
+    background-color: #a19783;
+    border-radius: 10px 300px;
+    font-size: 14pt;
+}
+
+.contact_us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    font-size: 20pt;
 }
 
 #B2E2 > li {
@@ -57,32 +157,37 @@ header {
 .faq {
     display: flex;
     flex-direction: column;
+    margin-top: 35px;
     align-items: center;
-    /* border-bottom: 2px black solid; */
     padding-bottom: 50px;
 }
 
 .login_form {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 600px;
+    height: 300px;
 }
 
 .log-f {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 300px;
 }
 
 .log-f > input {
     margin-bottom: 10px;
+    height: 20px;
+}
+
+.log-f > button {
+    height: 25px;
 }
 
 .gallery_admin {
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 50px;
 }
 
@@ -131,6 +236,14 @@ header {
     text-align: center;
 }
 
+.contact_info {
+    padding-top: 50px;
+}
+
+.contact_links {
+    padding-top: 50px;
+}
+
 .pricelist {
     display: flex;
     flex-direction: column;
@@ -139,4 +252,26 @@ header {
 
 .pricelist form {
     display: flex;
+}
+
+.adm_log_h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adm_h {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 23pt;
+}
+
+.adm_h h1 {
+    font-size: 40pt;
+}
+
+.adm_log_h h1 {
+    font-size: 40pt;
 }

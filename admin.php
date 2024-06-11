@@ -19,7 +19,7 @@ if(!isset($_SESSION["admin"])){
 </head>
 <body>
 <div class="site">
-        <header><center><h1>Админская панель</h1></center><a href="vendor/logout.php">Выйти</a></header>
+        <header class="adm_h"><h1>Админская панель</h1><a href="vendor/logout.php">Выйти</a></header>
        <div class="gallery_admin">
             <div class="add_pic">
                 <h2>Загрузить изображение в галерею</h2><br>

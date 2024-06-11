@@ -18,7 +18,7 @@
     <div class="site">
         <header>
             <div class="header_nav">
-                <div class="site_name">Имя Сайта</div>
+                <div class="site_name">Галерея Антонио</div>
                 <div><a href="index.php">Главная</a></div>
                 <div><a href="commission.php">Заказать услуги</a></div>
             </div>
