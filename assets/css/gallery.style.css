@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     border: 3px black solid;
+    background: linear-gradient(rgba(0, 0, 0, 0.418) 0%, rgba(0, 0, 0, 0.288) 100%);
 }
 
 .element-1 form {
@@ -25,8 +26,9 @@
 
 .element-2 {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin-right: 350px;
+    flex-direction: row-reverse;
 }
 
 .element-2 input {

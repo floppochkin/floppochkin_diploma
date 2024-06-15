@@ -275,3 +275,47 @@ body a:hover {
 .adm_log_h h1 {
     font-size: 40pt;
 }
+
+.filter_nav {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.filter_options {
+    margin-top: 20px;
+}
+
+.filter_header {
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+[data-filter] {
+    display: inline-block;
+    background: #954337;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+[data-filter] + [data-filter] {
+    margin-left: 5px;
+}
+
+[data-tags]:not(.show) {
+    display: none !important;
+}
+
+/* [data-tags] {
+    width: 250px;
+    display: inline-block !important;
+    background: #f1f1f1;
+    padding: 4rem 1rem;
+    margin: 1rem 1rem 1rem 0;
+} */

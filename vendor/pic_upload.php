@@ -7,6 +7,14 @@ if(!isset($_SESSION["admin"])) {
     exit();
 }
 
+$genre = $_POST['genre'];
+
+if ($genre == "nothing") {
+    $_SESSION['upload_status']='Выберете жанр';
+    header('Location:../admin.php');
+    exit();
+}
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if(empty($_FILES["image"]["name"])) { // Валидация в случае того, если пользователь забыл загрузить картинку и нажал на "загрузить"
@@ -47,8 +55,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     }
 	else {
-        $upload_date = date("M d Y", filemtime($_FILES['image']['tmp_name']));
-        $upload = mysqli_query($connect, "INSERT INTO `uploads` (`id`, `image_path`, `upload_date`) VALUES (NULL, '$image_path', '$upload_date')");
+        $upload_date = date("Y", filemtime($_FILES['image']['tmp_name']));
+        $upload = mysqli_query($connect, "INSERT INTO `uploads` (`id`, `image_path`, `upload_date`, `genre`) VALUES (NULL, '$image_path', '$upload_date', '$genre')");
         $_SESSION['upload_status']='Файл загружен';
         header('Location:../admin.php');
 
