@@ -1,26 +1,20 @@
 .element-1 {
     display: flex;
     flex-wrap: wrap;
+    border: 0.5rem #7e392e inset;
 }
 
 .element-1 a {
-    width: 25%;
+    flex: 1 1 30%;
     box-sizing: border-box;
-    padding: .25rem;
-    display: flex;
-    align-items: center;
-    border: 3px black solid;
-    background: linear-gradient(rgba(0, 0, 0, 0.418) 0%, rgba(0, 0, 0, 0.288) 100%);
-}
-
-.element-1 form {
-    width: 25%;
-    height: fit-content;
-    padding: .25rem;
+    display: flex;    
+    background: linear-gradient(rgba(0, 0, 0, 0.418) 0%, rgba(0, 0, 0, 0.377) 100%);
 }
 
 .element-1 img {
     width: 100%;
+    object-fit: cover;
+    height: 600px;
     display: flex;
 }
 
@@ -29,9 +23,6 @@
     flex-wrap: wrap-reverse;
     margin-right: 350px;
     flex-direction: row-reverse;
-}
-
-.element-2 input {
 }
 
 .element-2 a {
