@@ -59,7 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $upload = mysqli_query($connect, "INSERT INTO `uploads` (`id`, `image_path`, `upload_date`, `genre`) VALUES (NULL, '$image_path', '$upload_date', '$genre')");
         $_SESSION['upload_status']='Файл загружен';
         header('Location:../admin.php');
-
     }
 };
 

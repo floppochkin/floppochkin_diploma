@@ -15,7 +15,8 @@ if(!isset($_SESSION["admin"])){
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
 
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/art-icon.svg">
+    <title>Галерея Антонио</title>
 </head>
 <body>
 <div class="site">
@@ -47,7 +48,7 @@ if(!isset($_SESSION["admin"])){
                     if ($query_num_rows > 0) {
                         printf("<form action='vendor/change_price.php' method='POST'>");
                         while ($row = mysqli_fetch_assoc($query)) {
-                            printf("<div style='padding: 10px;' class='prices'>Портрет: " . $row['price'] . " руб</div>");
+                            printf("<div style='padding: 10px;' >Портрет: " . $row['price'] . " руб</div>");
                             printf("<input type='hidden' name='id' value='" . $row['id'] . "'>");
                             printf("<input type='text' pattern='\d*' placeholder='Введите новую цену' name='new_price'>");
                             printf("<input name='change_status' type='submit' value='Изменить цену'>");
@@ -63,7 +64,7 @@ if(!isset($_SESSION["admin"])){
                     if ($query_num_rows > 0) {
                         printf("<form action='vendor/change_price.php' method='POST'>");
                         while ($row = mysqli_fetch_assoc($query)) {
-                            printf("<div style='padding: 10px;' class='prices'>Картина в полный рост: " . $row['price'] . " руб</div>");
+                            printf("<div style='padding: 10px;' >Картина в полный рост: " . $row['price'] . " руб</div>");
                             printf("<input type='hidden' name='id' value='" . $row['id'] . "'>");
                             printf("<input type='text' pattern='\d*'  placeholder='Введите новую цену' name='new_price'>");
                             printf("<input name='change_status' type='submit' value='Изменить цену'>");
@@ -79,7 +80,7 @@ if(!isset($_SESSION["admin"])){
                     if ($query_num_rows > 0) {
                         printf("<form action='vendor/change_price.php' method='POST'>");
                         while ($row = mysqli_fetch_assoc($query)) {
-                            printf("<div style='padding: 10px;' class='prices'>Пейзаж: " . $row['price'] . " руб</div>");
+                            printf("<div style='padding: 10px;' >Пейзаж: " . $row['price'] . " руб</div>");
                             printf("<input type='hidden' name='id' value='" . $row['id'] . "'>");
                             printf("<input type='text' pattern='\d*' placeholder='Введите новую цену' name='new_price'>");
                             printf("<input name='change_status' type='submit' value='Изменить цену'>");

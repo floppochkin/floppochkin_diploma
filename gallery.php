@@ -14,7 +14,8 @@
     <script src="assets/js/autofilter.js"></script>
     <script src="assets/js/initilize_af_script.js"></script>
     
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/art-icon.svg">
+    <title>Галерея Антонио</title>
 </head>
 <body>
     <div class="site">
